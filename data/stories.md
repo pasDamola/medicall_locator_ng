@@ -1,3 +1,22 @@
+## search hospital happy path
+* greet
+ - utter_greet
+* search_provider{"facility_type":"hospital", "location":"Abuja"}
+ - action_facility_search
+* thanks
+ - utter_goodbye
+
+
+## search hospital + location
+* greet
+ - utter_greet
+* search_provider{"facility_type":"hospital"}
+ - utter_ask_location
+* inform{"location":"Abuja"}
+ - action_facility_search
+* thanks
+ - utter_goodbye
+
 ## happy path
 * greet
   - utter_greet

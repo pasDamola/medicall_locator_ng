@@ -6,10 +6,28 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - inform
+  - search_provider
+  - search_services
+
+entities:
+  - location
+  - facility_type
+  - service_type
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_ask_location
+  - utter_happy
+  - utter_iamabot
+  - action_facility_search
+  - action_service_search
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! How are you today? I am medicare locator, built to find you the nearest hospital with whatever specific services you might want"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -17,6 +35,9 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you?"
+
+  utter_ask_location:
+  - text: "Where are you located please?"
 
   utter_happy:
   - text: "Great, carry on!"

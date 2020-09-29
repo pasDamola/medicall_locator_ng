@@ -30,6 +30,13 @@
  - I'm looking for a nearby [hospital](facility_type) in [Lagos](location)
  - I dey find [hospital](facility_type) for [Abuja](location)
 
+## intent:search_services
+ - Do they offer [cardiotherapy](service_type)
+ - Is [endoscopy](service_type) available
+ - I'm looking for [ear, nose and throat](service_type) services
+ - Do they have [dentistry](service_type) services
+ - I'm looking for [physiotherapy](service_type) services
+
 ## intent:goodbye
 - bye
 - goodbye

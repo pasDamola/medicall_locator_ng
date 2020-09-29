@@ -4,7 +4,10 @@
 - hi
 - good morning
 - good evening
+- good afternoon
 - hey there
+- how far
+- what's up
 
 ## intent:inform
  - [Abuja](location)

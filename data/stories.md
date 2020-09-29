@@ -17,6 +17,30 @@
 * thanks
  - utter_goodbye
 
+## search hospital + location + services path 1
+* greet
+ - utter_greet
+* search_provider{"facility_type":"hospital"}
+ - utter_ask_location
+* inform{"location":"Abuja"}
+ - action_facility_search
+* search_services{"service_type": "cardiotherapy"}
+ - action_service_search
+* thanks
+ - utter_goodbye
+
+ ## search hospital + location + services path (refer to another hospital within the same location)
+* greet
+ - utter_greet
+* search_provider{"facility_type":"hospital"}
+ - utter_ask_location
+* inform{"location":"Abuja"}
+ - action_facility_search
+* search_services{"service_type": "cardiotherapy"}
+ - action_service_search
+* thanks
+ - utter_goodbye
+
 ## happy path
 * greet
   - utter_greet

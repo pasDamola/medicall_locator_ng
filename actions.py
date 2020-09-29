@@ -24,9 +24,9 @@ class ActionFacilitySearch(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         facility = tracker.get_slot("facility_type")
-        address = "Zone b, Apo Resettlement"
+        address = "zone b, apo resettlement, Abuja"
 
-        dispatcher.utter_message("Here is the address of the {}:{}".format(facility, search))
+        dispatcher.utter_message("Here is the address of the {}:{}".format(facility, address))
 
         return [SlotSet("address",address)]
 

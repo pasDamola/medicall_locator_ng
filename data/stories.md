@@ -14,7 +14,7 @@
  - utter_ask_location
 * inform{"location":"Abuja"}
  - action_facility_search
- - slot{"address": "Zone b, Apo Resettlement""}
+ - slot{"address": "zone b, apo resettlement, Abuja"}
 * thanks
  - utter_goodbye
 
@@ -25,7 +25,7 @@
  - utter_ask_location
 * inform{"location":"Abuja"}
  - action_facility_search
- - slot{"address": "Zone b, Apo Resettlement""}
+ - slot{"address": "zone b, apo resettlement, Abuja"}
 * search_services{"service_type": "cardiotherapy"}
  - action_service_search
  - slot{"service": "cardiotherapy"}

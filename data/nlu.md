@@ -85,3 +85,8 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:thanks
+ - thank you
+ - thanks much
+ - thank you very much

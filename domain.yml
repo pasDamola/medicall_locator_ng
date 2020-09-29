@@ -9,6 +9,7 @@ intents:
   - inform
   - search_provider
   - search_services
+  - thanks
 
 entities:
   - location
@@ -23,11 +24,10 @@ slots:
   service_type:
     type: text
   address:
-    type: featurized
+    type: unfeaturized
   service:
-    type: bool
+    type: text
 
-    
 actions:
   - utter_greet
   - utter_cheer_up
@@ -40,26 +40,26 @@ actions:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you today? I am medicare locator, built to find you the nearest hospital with whatever specific services you might want"
+    - text: "Hey! How are you today? I am medicare locator, built to find you the nearest hospital with whatever specific services you might want"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_ask_location:
-  - text: "Where are you located please, so we could give you the nearest {facility_type}?"
+    - text: "Where are you located please, so we could give you the nearest {facility_type}?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
 
 session_config:
   session_expiration_time: 60

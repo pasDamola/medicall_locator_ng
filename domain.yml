@@ -15,6 +15,19 @@ entities:
   - facility_type
   - service_type
 
+slots:
+  location:
+    type: text
+  facility_type:
+    type: text
+  service_type:
+    type: text
+  address:
+    type: featurized
+  service:
+    type: bool
+
+    
 actions:
   - utter_greet
   - utter_cheer_up
@@ -37,7 +50,7 @@ responses:
   - text: "Did that help you?"
 
   utter_ask_location:
-  - text: "Where are you located please?"
+  - text: "Where are you located please, so we could give you the nearest {facility_type}?"
 
   utter_happy:
   - text: "Great, carry on!"

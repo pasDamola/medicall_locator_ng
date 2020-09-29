@@ -14,6 +14,7 @@
  - utter_ask_location
 * inform{"location":"Abuja"}
  - action_facility_search
+ - slot{"address": "Zone b, Apo Resettlement""}
 * thanks
  - utter_goodbye
 
@@ -24,22 +25,14 @@
  - utter_ask_location
 * inform{"location":"Abuja"}
  - action_facility_search
+ - slot{"address": "Zone b, Apo Resettlement""}
 * search_services{"service_type": "cardiotherapy"}
  - action_service_search
+ - slot{"service": "cardiotherapy"}
 * thanks
  - utter_goodbye
 
- ## search hospital + location + services path (refer to another hospital within the same location)
-* greet
- - utter_greet
-* search_provider{"facility_type":"hospital"}
- - utter_ask_location
-* inform{"location":"Abuja"}
- - action_facility_search
-* search_services{"service_type": "cardiotherapy"}
- - action_service_search
-* thanks
- - utter_goodbye
+
 
 ## happy path
 * greet
